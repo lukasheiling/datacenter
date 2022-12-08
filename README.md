@@ -1,21 +1,21 @@
-# Network manager
+# Network Manager
 
 In den folgenden Einheiten sollen Sie ein Werkzeug entwickeln zur Planung und Dokumentation eines Computernetzwerkes.
 
 Während der Entwicklung des Werkzeugs sollen Sie übliche Praktiken anwenden.
 
-## Teil 1 die Aufgabenerfassung
+## Teil 1: die Aufgabenerfassung
 
 Zuerst werden Sie sich mit dem Zusammentragen von Anforderungen für unser Netzwerktool beschäftigen.
 
 ```markdown
-# Userstory <mame>
+# User story <name>
 
 short description
 
 ## Actors
 
-Who is the actor and i which role.
+Who is the actor and i which role?
 
 ## Input
 
@@ -38,7 +38,7 @@ possible errors
 Eine Beispiel Userstory könnte folgendermaßen aussehen.
 
 ```markdown
-# Userstory add wall socket.
+# User story add wall socket.
 
 Add a network wall socket to the system
 
@@ -48,15 +48,15 @@ Add a network wall socket to the system
 
 ## Input
 
-Building, Floor, Roomnumber, Socket numbers, 
+Building, Floor, Room number, Socket numbers, 
 
 ## Internal state change
 
-The socket is persistet into the system
+The socket is persisted into the system
 
 ## Output 
 
-Acknolegement
+Acknowledgement
 
 ## Errors
 
@@ -69,8 +69,8 @@ Acknolegement
 
 ### Vorgehen
 
-Erzeugen Sie einen fork von dem repository `https://github.com/htlweiz/datacenter.git`.
+Erzeugen Sie einen Fork von dem Repository https://github.com/htlweiz/datacenter.git.
 
-Erstellen Sie Ihre userstory im Verzeichnis userstories, in der Form des angegebenen Beispiels.
+Erstellen Sie Ihre User-story im Verzeichnis `userstories`, in der Form des angegebenen Beispiels.
 
-Immer wenn Sie eine Userstory fertiggestellt haben, erzeugen Sie einen Merge-Request damit ich Sie in den Tree aufnehmen kann.
+Immer wenn Sie eine User-story fertiggestellt haben, erzeugen Sie einen Pull-Request, damit ich Sie in den Hauptzweig aufnehmen kann.
