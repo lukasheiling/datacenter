@@ -16,7 +16,7 @@ The Date will be noted in the system
 
 ## Output
 
-Current Date
+Current Date acknowleged
 
 ## Errors
 
