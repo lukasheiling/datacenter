@@ -16,10 +16,10 @@ None
 
 ## Output
 
-All Usable Paths to the switch
+All Switches that have been reached
+All switches that haven't been reached
 
 ## Errors
 
 * insufficient rights
-* nonexistend switch
-* couldn't reach switch
+* No switch exists
