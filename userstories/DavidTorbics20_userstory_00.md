@@ -12,7 +12,7 @@ Building, Floor, Room number, Socket numbers, Computers
 
 ## Internal state change
 
-The socket is persisted into the system
+Saving enduser IP to a list
 
 ## Output 
 
