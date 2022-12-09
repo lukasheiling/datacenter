@@ -1,10 +1,10 @@
-# User story add date
+# User story add current date
 
 Add the current date
 
 ## Actors
 
-*Person (Role: User)
+* Person (Role: User)
 
 ## Input
 
