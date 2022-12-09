@@ -1,4 +1,4 @@
-# User story add wall socket.
+# User story remove wall socket.
 
 Remove a network wall socket to the system
 
@@ -8,7 +8,7 @@ Remove a network wall socket to the system
 
 ## Input
 
-Building, Floor, Room number, Socket numbers, 
+Building, Floor, Room number, Socket numbers,
 
 ## Internal state change
 
