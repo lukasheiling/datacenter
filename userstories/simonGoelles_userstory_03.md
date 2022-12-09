@@ -1,6 +1,6 @@
-# User story add Room
+# User story add Floor
 
-add a room to the systhem
+add a floor to the systhem
 
 ## Actors
 
@@ -8,11 +8,11 @@ add a room to the systhem
 
 ## Input
 
-Building, Floor, Room number
+Building, Floor
 
 ## Internal state change
 
-The room is added to the systhem
+The floor is added to the systhem
 
 ## Output 
 
@@ -22,5 +22,4 @@ Acknowledgement
 
 * insufficient rights
 * nonexistent building
-* nonexistent floor
-* alredy existent room 
+* alredy existen floor
