@@ -12,7 +12,7 @@ Building number, Floor number, Room number
 
 ## Internal state change
 
-The socket is located.
+The socket has been located.
 
 ## Output 
 
