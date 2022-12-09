@@ -1,6 +1,6 @@
 # User story add switch to system.
 
-Add a swith to the system.
+Add a switch to the system.
 
 ## Actors
 
