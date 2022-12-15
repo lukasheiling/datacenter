@@ -2,7 +2,7 @@
 
 ## Building
 
-* Bulding_ID(INT) 
+* Building_ID(INT) 
 * Description(varchar)
 * Constraint PK(Building_ID)
 
