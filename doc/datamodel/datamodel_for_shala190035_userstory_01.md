@@ -10,7 +10,7 @@
 * Building_id (integer)
 * Floor_number (integer)
 * Constraint PK(Floor_id)
-* Constraint FK(Building_id) references Building.* Building_id
+* Constraint FK(Building_id) references Building. Building_id
 
 ## Table 3: Room
 * Room_id (integer)
