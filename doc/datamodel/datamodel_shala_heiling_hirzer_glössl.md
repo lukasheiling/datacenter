@@ -1,3 +1,30 @@
+# Userstory_Server
+
+## Table 1: Building
+* Building_id (integer)
+* Building_name (string)
+* Constraint PK(Building_id)
+
+## Table 2: Floor
+* Floor_id (integer)
+* Building_id (integer)
+* Floor_number (integer)
+* Constraint PK(Floor_id)
+* Constraint FK(Building_id) references Building. Building_id
+
+## Table 3: Room
+* Room_id (integer)
+* Floor_id (integer)
+* Room_number (string)
+* Constraint PK(Room_id)
+* Constraint FK(Floor_id) references Floor.Floor_id
+
+## Table 4: Server
+* Server_id: integer
+* Server_Name: string
+* Constraint FK(Room_id) references Room.Room_id
+
+
 # Userstory_Monitor_network_usage_in_datacenter
 
 ## Table 1: Building
@@ -19,14 +46,14 @@
 * Constraint PK(Room_id)
 * Constraint FK(Floor_id) references Floor.Floor_id
 
-## Datacenter
+## Table 4: Datacenter
 * Datacenter_id (primary key)
 * Datacenter_name (varchar)
 * Address (varchar)
 * Constraint PK(Datacenter_id)
-* Constraint FK(Floor_id) references Floor.Floor_id
+* Constraint FK(Room_id) references Room.Room_id
 
-## Network usage
+## Table 5: Network usage
 * NetworkUsage_id (primary key)
 * Timestamp (int)
 * Traffic (int)
@@ -34,7 +61,6 @@
 * Performance (int)
 * Constraint PK(NetworkUsage_id)
 * Constraint FK(Datacenter_id) references Datacenter.Datacenter_id
-* Constraint FK(Floor_id) references Floor.Floor_id
 * Constraint FK(Room_id) references Room.Room_id
 
 # Userstory_login
