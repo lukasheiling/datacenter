@@ -1,6 +1,6 @@
-# User story get existing IPs.
+# User story locate every device.
 
-Receive the IP address of every enduser in the network 
+Create a table containing every devices location
 
 ## Actors
 
@@ -12,11 +12,11 @@ Building, Floor, Room number, Socket numbers, Computers
 
 ## Internal state change
 
-Saving enduser IP to a list
+Saving enduser location to a list (the list with IPs)
 
 ## Output 
 
-A list of IP addresses
+A list with IPs and the location of the devices
 
 ## Errors
 
@@ -26,3 +26,4 @@ A list of IP addresses
 * nonexistent room
 * no endusers found
 * duplicate IPs
+* duplicate location

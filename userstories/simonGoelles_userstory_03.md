@@ -1,6 +1,6 @@
 # User story add Floor
 
-add a floor to the systhem
+add a floor to the system
 
 ## Actors
 
@@ -12,7 +12,7 @@ Building, Floor
 
 ## Internal state change
 
-The floor is added to the systhem
+The floor is added to the system
 
 ## Output 
 

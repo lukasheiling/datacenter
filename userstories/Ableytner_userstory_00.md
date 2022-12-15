@@ -1,6 +1,6 @@
 # User story get existing IPs.
 
-Receive the IP address of every enduser in the network 
+Install MikroTik configured as a switch
 
 ## Actors
 
@@ -26,3 +26,4 @@ A list of IP addresses
 * nonexistent room
 * no endusers found
 * duplicate IPs
+* 
