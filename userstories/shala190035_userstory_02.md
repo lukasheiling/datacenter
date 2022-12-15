@@ -14,6 +14,6 @@ The access point is added to the system and is associated with the specified loc
 Acknowledgement 
 
 ## Errors
-Insufficient rights
-Nonexistent building, floor, or room
-Already existent access point
+* Insufficient rights
+* Nonexistent building, floor, or room
+* Already existent access point
