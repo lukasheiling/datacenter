@@ -1,29 +1,29 @@
 # Userstory_AddAccessPoint
 
 ## Table 1: Building
-* BuildingId (INTEGER)
-* BuildingName (VARCHAR)
-* Constraint PK(BuildingId)
+* Building_id (integer)
+* Building_name (string)
+* Constraint PK(Building_id)
 
 ## Table 2: Floor
-* FloorId (INTEGER)
-* BuildingId (INTEGER)
-* FloorNumber (INTEGER)
-* Constraint PK(FloorId)
-* Constraint FK(BuildingId) references Building.* BuildingId
+* Floor_id (integer)
+Building_id (integer)
+Floor_number (integer)
+Constraint PK(Floor_id)
+Constraint FK(Building_id) references Building.Building_id
 
 ## Table 3: Room
-* RoomId (INTEGER)
-* FloorId (INTEGER)
-* RoomNumber (INTEGER)
-* Constraint PK(RoomId)
-* Constraint FK(FloorId) references Floor.FloorId
+Room_id (integer)
+Floor_id (integer)
+Room_number (string)
+Constraint PK(Room_id)
+Constraint FK(Floor_id) references Floor.Floor_id
 
 ## Table 4: AccessPoint
-* AccessPointId (INTEGER)
-* RoomId (INTEGER)
-* AccessPointName (VARCHAR)
-* AccessPointModel (VARCHAR)
-* AccessPointSerialNumber (VARCHAR)
+* AccessPoint_id (INTEGER)
+* Room_id (INTEGER)
+* AccessPoint_name (VARCHAR)
+* AccessPoint_model (VARCHAR)
+* AccessPoint_serialNumber (VARCHAR)
 * Constraint PK(AccessPointId)
 * Constraint FK(RoomId) references Room.RoomId
