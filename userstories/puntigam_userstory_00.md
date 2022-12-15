@@ -1,6 +1,6 @@
-# User story add Room
+# User story add Switch.
 
-add a room to the system
+Add a new switch to the system
 
 ## Actors
 
@@ -8,11 +8,11 @@ add a room to the system
 
 ## Input
 
-Building, Floor, Room number
+Building, Floor, Room number, Socket numbers, 
 
 ## Internal state change
 
-The room is added to the system
+The switch is persisted into the system
 
 ## Output 
 
@@ -23,4 +23,4 @@ Acknowledgement
 * insufficient rights
 * nonexistent building
 * nonexistent floor
-* alredy existent room 
+* nonexistent room
