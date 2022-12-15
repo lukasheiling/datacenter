@@ -1,4 +1,4 @@
-# User story find active network device.
+# User story create VLAN.
 
 ## Building
 
@@ -30,15 +30,17 @@
 * Switch_ID(INT)
 * Descripton(varchar)
 * Error_ID(INT)
+* VLAN_ID(INT)
 * Room_ID(INT)
 * Status_Network(boolean)
 * Constraint PK(Switch_ID)
 * Constraint FK(Room_ID) references Room.
 Room_ID
-* Constraint FK(Status_Network) references ActiveNetworks.
-ActiveNetworks_ID
 * Constraint FK(Error_ID) references Errors.
 Error_ID
+* Constraint FK(VLAN_ID) references VLAN.
+VLAN_ID
+
 
 
 ## Router 
@@ -46,26 +48,30 @@ Error_ID
 * Router_ID(INT)
 * Descripton(varchar)
 * Error_ID(INT)
+* VLAN_ID(INT)
 * Status(boolean)
 * Room_ID(INT)
 * Status_Network(boolean)
 * Constraint PK(Router_ID)
 * Constraint FK(Room_ID) references Room.
 Room_ID
-* Constraint FK(Status_Network) references ActiveNetworks.
-ActiveNetworks_ID
 * Constraint FK(Error_ID) references Errors.
 Error_ID
+* Constraint FK(VLAN_ID) references VLAN.
+VLAN_ID
 
 
-## Active Networks 
 
-* ActiveNetworks_ID(INT)
+## VLAN 
+
+* VLAN_ID(INT)
+* Description(varchar)
 * Status(boolean)
 * Room_ID(INT)
-* Constraint PK(ActiveNetworks_ID)
+* Constraint PK(VLAN_ID)
 * Constraint FK(Room_ID) references Room.
 Room_ID
+
 
 ## Errors
 
