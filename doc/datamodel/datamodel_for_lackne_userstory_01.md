@@ -19,3 +19,43 @@
 * constraint FK(Wall_socket) references Wall_sockets.ID
 * constraint FK(Switch) references Switch.ID
 
+## Room 
+
+* ID(int)
+* Name(varchar)
+* Location(Varchar)
+* constraint PK(ID)
+* FloorNumber(FK)
+
+## Floor
+
+* ID(int)
+* Floornumber(varchar)
+* Building(FK)
+
+## Building
+
+* ID(int)
+* Name(varchar)
+* Address(varchar)
+
+## Building/Floor
+
+* Floornumber
+* Building.ID
+
+## Computer
+
+* ID(int)
+* Connection.ID
+
+## Computer/Wall_sockets
+
+* Computer.ID
+* Wall_sockets.ID
+
+## Room/Wall_sockets
+
+* Room.ID
+* Wall_sockets.ID
+
