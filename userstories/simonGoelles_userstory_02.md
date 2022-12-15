@@ -1,6 +1,6 @@
 # User story add Room
 
-add a room to the systhem
+add a room to the system
 
 ## Actors
 
@@ -12,7 +12,7 @@ Building, Floor, Room number
 
 ## Internal state change
 
-The room is added to the systhem
+The room is added to the system
 
 ## Output 
 
