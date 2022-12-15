@@ -1,0 +1,14 @@
+backref
+capsys
+exc
+fastapi
+nullable
+orm
+pydantic
+readouterr
+sessionmaker
+sqlalchemy
+sqlite3
+tablename
+websocket
+
