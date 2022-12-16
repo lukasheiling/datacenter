@@ -8,5 +8,7 @@ from .room import Room
 __exports__ = [
     Base,
     FooBar,
+    Address,
     Room,
+    DeviceType,
 ]
