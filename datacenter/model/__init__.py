@@ -5,7 +5,7 @@ from .base import Base
 from .foo_bar import FooBar
 from .room import Room
 from .address import Address
-from .socket import Socket
+from .socket_data import Socket
 
 __exports__ = [
     Base,
