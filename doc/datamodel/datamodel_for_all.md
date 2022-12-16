@@ -1,4 +1,4 @@
-# User story create account.
+# Datamodel for all the tables
 
 ## User
 
@@ -30,10 +30,10 @@
 
 -   Id INT
 -   UserId INT
--   City
--   Street
--   Housenumber
--   Zipcode
+-   City VARCHAR
+-   Street VARCHAR
+-   Housenumber INT
+-   Zipcode INT
 -   Constraint PK(Id)
 -   Constraint FK(UserId) references User.Id
 
@@ -53,30 +53,6 @@
 -   Constraint FK(UserId) references User.Id
 -   Constraint FK(RoleId) references Role.Id
 
-## DeviceTypes
-
--   Id INT
--   DeviceFunctionality VARCHAR
-
-## Devices
-
--   Id INT
--   DeviceName VARCHAR
--   DeviceTypeId INT
--   Constraint PK(Id)
--   Constraint FK(DeviceTypeId) references DeviceType.Id
-
-## Socket
-
--   Id INT
--   SocketName VARCHAR
--   FirstPortId INT
--   SecondPortId INT
--   RoomId INT
--   Constraint PK(Id)
--   Constraint FK(RoomId) references Room.Id
--   Constraint FK(FirstPortId) references Port.Id
--   Constraint FK(SecondPortId) references Port.Id
 
 ## Room
 
@@ -100,6 +76,41 @@
 -   BuildingName VARCHAR
 -   Constraint PK(Id)
 
+## NetworkUsage
+
+-   Id INT
+-   Timestamp INT
+-   Traffic INT
+-   Performance INT
+-   ConntectionId INT
+-   Constraint PK(Id)
+-   Constraint FK(ConntectionId) references Connection.Id
+
+## DeviceType
+
+-   Id INT
+-   DeviceFunctionality VARCHAR
+
+## Device
+
+-   Id INT
+-   DeviceName VARCHAR
+-   DeviceTypeId INT
+-   Constraint PK(Id)
+-   Constraint FK(DeviceTypeId) references DeviceType.Id
+
+## Socket
+
+-   Id INT
+-   SocketName VARCHAR
+-   FirstConnectionId INT
+-   SecondConnectionId INT
+-   RoomId INT
+-   Constraint PK(Id)
+-   Constraint FK(RoomId) references Room.Id
+-   Constraint FK(FirstConnectionId) references Connection.Id
+-   Constraint FK(SecondConnectionId) references Connection.Id
+
 ## Port
 
 -   Id INT
@@ -117,8 +128,19 @@
 -   FirstPortId INT
 -   SecondPortId INT
 -   Constraint PK(Id)
+-   DataTransferRate FLOAT
+-   Cable_type (string)
+-   PoE (boolean)
 -   Constraint FK(FirstPortId) references Port.Id
 -   Constraint FK(SecondPortId) references Port.Id
+
+## PortConnection
+
+-   Id INT
+-   PortID INT
+-   ConnectionId INT
+-   Constraint FK(PortId) references Port.Id
+-   Constraint FK(ConnectionId) references Connection.Id
 
 ## Vlan
 
