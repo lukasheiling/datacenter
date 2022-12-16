@@ -8,6 +8,7 @@ from .room import Room
 from .address import Address
 from .socket_data import Socket
 from .network_usage import NetworkUsage
+from .user import User
 
 __exports__ = [
     Base,
@@ -18,4 +19,5 @@ __exports__ = [
     Socket,
     DeviceType,
     NetworkUsage,
+    User
 ]
