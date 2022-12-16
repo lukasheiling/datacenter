@@ -1,12 +1,5 @@
 # Datamodel monitor network usage in datacenter
 
-## Administrator
-- id (primary key)
-- name (varchar)
-- email (varchar)
-- password (varchar)
-- datacenter_ids (foreign keys)
-
 ## Datacenter
 - id (primary key)
 - name (varchar)
