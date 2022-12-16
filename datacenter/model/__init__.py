@@ -9,6 +9,6 @@ from .address import Address
 __exports__ = [
     Base,
     FooBar,
-    Address
+    Address,
     Room,
 ]
