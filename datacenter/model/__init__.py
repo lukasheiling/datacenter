@@ -10,7 +10,7 @@ from .address import Address
 from .socket import Socket
 from .network_usage import NetworkUsage
 from .address import Address
-from device_type import DeviceType
+from .device_type import DeviceType
 
 __exports__ = [
     Base,
